@@ -182,7 +182,7 @@ const blogs = {
     /* this function sort the posts on the basis of timestamp */
     sortBasedOnTime: () => {
         return blogs.blogData.sort(
-            (obj1, obj2) =>  new Date(obj1.timestamp).getTime() - new Date(obj2.timestamp).getTime()
+            (obj1, obj2) =>  new Date(obj2.timestamp).getTime() - new Date(obj1.timestamp).getTime()
         );
     },
 
