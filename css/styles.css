@@ -1,0 +1,125 @@
+/* Devloper: Tanish Bansal (tanish.sc@gmail.com) */
+.header {
+    padding-left: 30px;
+    border-bottom: 10px solid black;
+}
+
+.first-letter {
+    font-size: 55px;
+    line-height: 70px;
+}
+
+.past-posts-header {
+    width: 39%;
+    float: left;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.current-posts-header {
+    min-height: 800px;
+    width: 58%;
+    float: right;
+    border-left: 10px solid black;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-header {
+    padding: 10px 10px 0;
+    min-height: 20px;
+}
+
+.card-header-time {
+    float: right;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-bottom {
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-button {
+    margin-right: 5px;
+}
+
+.new-post-button {
+    display: flex;
+    justify-content: center;
+}
+
+.new-post {
+    margin: 35px;
+}
+
+.hide {
+    display: none;
+}
+
+.new-post-layout {
+    margin-left: 20%;
+    margin-right: 50%;
+    width: 35%;
+}
+
+.save-button {
+    margin-left: 52%;
+}
+
+#title {
+    height: 25px;
+    padding: 5px;
+}
+
+#text {
+    padding: 5px;
+}
+
+.search-post {
+    float: right;
+    margin-right: 20px;
+}
+
+#site-search {
+    width: 110px;
+}
+
+@media only screen and (max-width: 500px) {
+    #site-search {
+        width: 60px;
+    }
+    .header {
+        padding-left: 2px;
+    }
+  }
+
+a {
+    text-decoration: none;
+}
+
+label {
+    margin-left: 10%;
+    position: relative;
+    top: 20px;
+}
+
+body {
+    margin: 0;
+}

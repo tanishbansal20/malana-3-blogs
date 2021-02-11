@@ -1,0 +1,62 @@
+<!-- Devloper: Tanish Bansal (tanish.sc@gmail.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/styles.js"></script>
+    </head>
+    <body>
+        <!-- header contain title and functionality -->
+        <div class="header">
+            <!-- title -->
+            <span class="header-title">
+                <h1><span class="first-letter">M</span>Y<span class="first-letter"> B</span>LOG</h1>
+            </span>
+            <!-- all buttons -->
+            <p class="header-options">
+                <input type="button" onclick="blogs.homePage()" value="Home">
+                <input type="button" onclick="blogs.newPage()" value="Create New Post">
+                <input type="button" class="delete-all-posts" onclick="blogs.deletePosts()" value="Delete All Posts">
+                <input type="button" class="generate-post hide" onclick="blogs.generateRandomPosts()" value="Generate Random Posts">
+                <span class="search-post">
+                    <input type="search" id="site-search" placeholder="Search By Title">
+                    <input type="button" onclick="blogs.searchByTitle()" value="submit">
+                </span>
+            </p>
+        </div>
+        <!-- body container  -->
+        <div class="body">
+            <!-- Home Page Container -->
+            <div class="home-page">
+                <!-- left post container -->
+                <div class="past-posts-header">
+                    <div class="title"><h2>PAST POSTS</h2></div>
+                    <div class="past-posts"></div>
+                    <div class="new-post-button">
+                        <input type="button" onclick="blogs.newPage()" value="Create New Post">
+                    </div>
+                </div>
+                <!-- right post Container -->
+                <div class="current-posts-header"></div>
+            </div>
+            <!-- New post container -->
+            <div class="new-post hide">
+                <div class="new-post-header">
+                    <p><h2>New Post</h2></p>
+                </div>  
+                <form action="" method="get">
+                    <div>
+                        <label for="title">Title:</label>
+                        <input class="new-post-layout" type="text" id="title"><br><br>
+                    </div>
+                    <div>
+                        <label for="text">Text:</label>
+                        <textarea class="new-post-layout" id="text" name="text" rows="12" cols="50"></textarea><br><br>
+                    </div>
+                    <input type="button" class="save-button" onclick="blogs.createPost()" value="Save">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
